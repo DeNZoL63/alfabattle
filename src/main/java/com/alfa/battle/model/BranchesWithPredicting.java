@@ -1,17 +1,15 @@
 package com.alfa.battle.model;
 
-import java.util.Objects;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
+import java.util.Objects;
 
 /**
  * BranchesWithPredicting
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2020-06-27T15:13:40.716+04:00")
 
-public class BranchesWithPredicting   {
+public class BranchesWithPredicting {
   private String address = null;
 
   private Integer dayOfWeek = null;
@@ -33,10 +31,11 @@ public class BranchesWithPredicting   {
     return this;
   }
 
-   /**
+  /**
    * Get address
+   *
    * @return address
-  **/
+   **/
   @ApiModelProperty(value = "")
   public String getAddress() {
     return address;
@@ -51,10 +50,11 @@ public class BranchesWithPredicting   {
     return this;
   }
 
-   /**
+  /**
    * Get dayOfWeek
+   *
    * @return dayOfWeek
-  **/
+   **/
   @ApiModelProperty(value = "")
   public Integer getDayOfWeek() {
     return dayOfWeek;
@@ -69,10 +69,11 @@ public class BranchesWithPredicting   {
     return this;
   }
 
-   /**
+  /**
    * Get hourOfDay
+   *
    * @return hourOfDay
-  **/
+   **/
   @ApiModelProperty(value = "")
   public Integer getHourOfDay() {
     return hourOfDay;
@@ -87,10 +88,11 @@ public class BranchesWithPredicting   {
     return this;
   }
 
-   /**
+  /**
    * Get id
+   *
    * @return id
-  **/
+   **/
   @ApiModelProperty(value = "")
   public Long getId() {
     return id;
@@ -105,10 +107,11 @@ public class BranchesWithPredicting   {
     return this;
   }
 
-   /**
+  /**
    * Get lat
+   *
    * @return lat
-  **/
+   **/
   @ApiModelProperty(value = "")
   public Double getLat() {
     return lat;
@@ -123,10 +126,11 @@ public class BranchesWithPredicting   {
     return this;
   }
 
-   /**
+  /**
    * Get lon
+   *
    * @return lon
-  **/
+   **/
   @ApiModelProperty(value = "")
   public Double getLon() {
     return lon;
@@ -141,10 +145,11 @@ public class BranchesWithPredicting   {
     return this;
   }
 
-   /**
+  /**
    * Get predicting
+   *
    * @return predicting
-  **/
+   **/
   @ApiModelProperty(value = "")
   public Long getPredicting() {
     return predicting;
@@ -159,10 +164,11 @@ public class BranchesWithPredicting   {
     return this;
   }
 
-   /**
+  /**
    * Get title
+   *
    * @return title
-  **/
+   **/
   @ApiModelProperty(value = "")
   public String getTitle() {
     return title;
@@ -183,13 +189,13 @@ public class BranchesWithPredicting   {
     }
     BranchesWithPredicting branchesWithPredicting = (BranchesWithPredicting) o;
     return Objects.equals(this.address, branchesWithPredicting.address) &&
-        Objects.equals(this.dayOfWeek, branchesWithPredicting.dayOfWeek) &&
-        Objects.equals(this.hourOfDay, branchesWithPredicting.hourOfDay) &&
-        Objects.equals(this.id, branchesWithPredicting.id) &&
-        Objects.equals(this.lat, branchesWithPredicting.lat) &&
-        Objects.equals(this.lon, branchesWithPredicting.lon) &&
-        Objects.equals(this.predicting, branchesWithPredicting.predicting) &&
-        Objects.equals(this.title, branchesWithPredicting.title);
+            Objects.equals(this.dayOfWeek, branchesWithPredicting.dayOfWeek) &&
+            Objects.equals(this.hourOfDay, branchesWithPredicting.hourOfDay) &&
+            Objects.equals(this.id, branchesWithPredicting.id) &&
+            Objects.equals(this.lat, branchesWithPredicting.lat) &&
+            Objects.equals(this.lon, branchesWithPredicting.lon) &&
+            Objects.equals(this.predicting, branchesWithPredicting.predicting) &&
+            Objects.equals(this.title, branchesWithPredicting.title);
   }
 
   @Override
@@ -201,7 +207,7 @@ public class BranchesWithPredicting   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BranchesWithPredicting {\n");
-    
+
     sb.append("    address: ").append(toIndentedString(address)).append("\n");
     sb.append("    dayOfWeek: ").append(toIndentedString(dayOfWeek)).append("\n");
     sb.append("    hourOfDay: ").append(toIndentedString(hourOfDay)).append("\n");
