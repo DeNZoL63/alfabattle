@@ -2,6 +2,7 @@ package com.alfa.battle.api;
 
 import com.alfa.battle.model.Branches;
 import com.alfa.battle.model.BranchesWithPredicting;
+import com.alfa.battle.model.ErrorResponse;
 import com.alfa.battle.repository.BranchesRepo;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +23,15 @@ public class BranchesApiController implements BranchesApi {
     @Autowired
     private BranchesRepo branchesRepo;
 
-    public ResponseEntity<Branches> getBranchUsingGET(
+    public ResponseEntity getBranchUsingGET(
             @ApiParam(value = "id", required = true) @PathVariable("id") Long id
     ) {
 
         Branches branches = branchesRepo.findById(id).orElse(null);
+
+        if (branches == null) {
+            return new ResponseEntity<ErrorResponse>(new ErrorResponse().status("branch not found"), HttpStatus.NOT_FOUND);
+        }
 
         return new ResponseEntity<Branches>(branches, HttpStatus.OK);
     }
