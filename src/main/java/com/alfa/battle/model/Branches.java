@@ -2,6 +2,7 @@ package com.alfa.battle.model;
 
 import io.swagger.annotations.ApiModelProperty;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
@@ -12,15 +13,20 @@ import java.util.Objects;
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2020-06-27T15:13:40.716+04:00")
 @Entity
 public class Branches {
+    @Column(name = "address")
     private String address = null;
 
     @Id
+    @Column(name = "id")
     private Long id = null;
 
+    @Column(name = "lat")
     private Double lat = null;
 
+    @Column(name = "lon")
     private Double lon = null;
 
+    @Column(name = "title")
     private String title = null;
 
     public Branches address(String address) {

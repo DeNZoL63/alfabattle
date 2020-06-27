@@ -20,4 +20,15 @@ public class BranchesController {
     public ResponseEntity<Branches> getBranchesById(@PathVariable("id") Long id) {
         return branchesApiController.getBranchUsingGET(id);
     }
+
+    @SuppressWarnings("rawtypes")
+    @RequestMapping(
+            value = "/branches",
+            params = {"lat", "lon"},
+            method = RequestMethod.GET
+    )
+    public ResponseEntity getNearest(@RequestParam(value = "lat", required = true) Double lat,
+                                     @RequestParam(value = "lon", required = true) Double lon) {
+        return branchesApiController.getNearBranchUsingGET(lat, lon);
+    }
 }
