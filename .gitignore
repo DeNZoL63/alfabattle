@@ -30,3 +30,13 @@ out/
 
 ### VS Code ###
 .vscode/
+
+keys/ca.*
+keys/server.*
+keys/client.*
+keys/serial
+keys/certindex.txt*
+keys/*.pem
+keys/*.jks
+keys/*.p12
+keys/*.old
