@@ -1,0 +1,86 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: C=RU, ST=Samara, L=Togliatty, O=Influunt, OU=Alfabattle, CN=localhost
+        Validity
+            Not Before: Jun 22 16:01:38 2020 GMT
+            Not After : Jun 22 16:01:38 2021 GMT
+        Subject: C=RU, ST=Samara, O=Influunt, OU=Alfabattle, CN=localhost
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:eb:21:35:7a:3a:34:70:c9:62:b2:15:16:4d:fa:
+                    89:7f:11:67:72:02:59:50:3f:95:9d:7d:7e:f1:d6:
+                    cd:a1:c4:74:33:d3:70:df:5e:73:5e:2c:27:19:cd:
+                    d3:05:62:b3:23:43:b4:f6:9c:55:55:41:cc:f9:45:
+                    b3:2a:81:87:3f:c5:58:29:5b:2b:d9:c9:66:19:94:
+                    42:cc:9e:c5:e5:4e:c8:c2:34:bd:70:ff:b0:3d:ca:
+                    c7:09:83:19:cc:d8:dd:23:5a:79:96:99:48:86:0e:
+                    43:34:6d:90:ed:74:72:76:d3:1e:f2:ab:6d:56:95:
+                    90:2a:27:95:88:c8:b8:29:d0:9c:f6:05:bb:90:91:
+                    67:22:8e:fb:49:6d:f7:53:0b:23:ea:15:f1:ea:cb:
+                    b8:24:72:a6:bd:e8:d8:0d:2b:b7:09:21:11:e0:fe:
+                    b0:55:e2:e3:0d:0e:d5:04:47:4f:49:ee:c7:d3:6d:
+                    28:81:c8:51:2e:6a:05:cd:82:4c:18:a6:56:72:80:
+                    4e:63:a0:d3:6b:56:8a:03:f0:38:92:1f:10:de:f9:
+                    c1:76:88:17:0b:5a:e4:5a:a7:1a:41:70:ca:0e:dc:
+                    c1:85:b0:0b:2c:ae:e0:77:fd:de:86:45:af:c8:9a:
+                    69:7c:9e:a2:42:bc:3b:d8:fe:9e:5a:b1:20:af:3c:
+                    1f:1f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                6D:3E:F1:04:CF:35:38:B5:CF:7D:3E:8C:78:2E:CB:96:3B:CF:96:D6
+            X509v3 Authority Key Identifier: 
+                keyid:5A:F1:88:08:57:8E:68:21:B7:8C:91:C7:DF:5F:83:5A:38:87:A4:6B
+                DirName:/C=RU/ST=Samara/L=Togliatty/O=Influunt/OU=Alfabattle/CN=localhost
+                serial:66:19:40:85:28:F5:03:AE:9E:91:80:A2:DE:7C:BF:66:BF:99:D4:C6
+
+            X509v3 Subject Alternative Name: 
+                DNS:localhost, IP Address:127.0.0.1
+    Signature Algorithm: sha512WithRSAEncryption
+         59:59:cb:f3:64:df:11:e2:2b:f1:06:03:13:dc:31:56:e8:a7:
+         85:d9:33:c3:12:c8:44:ab:06:ac:30:ea:9b:77:4a:31:d6:95:
+         11:c4:f0:89:24:75:1f:96:dc:bd:e1:10:5f:f6:2e:d5:d1:56:
+         e8:6a:b7:66:cb:7f:78:47:91:7f:c7:c6:40:3e:06:9a:b2:1f:
+         6d:8c:6e:a7:75:de:85:e1:52:0b:b7:61:67:d7:d5:29:60:50:
+         58:f4:07:7c:91:7a:f9:7c:13:65:0a:23:4a:23:41:b4:bf:12:
+         34:61:ac:fc:0b:4b:b1:c5:2d:38:42:46:52:02:c3:b7:6a:67:
+         fb:5a:68:87:8c:40:66:5c:c3:59:33:4a:95:70:b3:cd:3f:06:
+         1e:66:a6:85:fb:dc:d2:e1:9f:4f:f1:37:ef:fb:29:b5:41:a2:
+         10:87:5c:86:bf:6a:20:8b:bd:0c:b9:c5:f4:3c:85:4b:3f:33:
+         ba:8b:ce:96:9e:58:05:36:0f:9b:f4:a5:b5:d1:c6:c1:00:32:
+         7c:34:5a:a1:0d:78:94:22:13:10:56:76:f1:6f:e5:27:45:7d:
+         95:4d:99:0d:4e:fa:db:e5:c1:ff:e5:cd:c4:44:63:e5:0a:64:
+         d0:d6:f1:0e:88:7d:b4:dc:45:56:d1:d6:31:a0:e6:7e:b5:3a:
+         90:43:d6:55
+-----BEGIN CERTIFICATE-----
+MIIEPjCCAyagAwIBAgIBAjANBgkqhkiG9w0BAQ0FADBuMQswCQYDVQQGEwJSVTEP
+MA0GA1UECBMGU2FtYXJhMRIwEAYDVQQHEwlUb2dsaWF0dHkxETAPBgNVBAoTCElu
+Zmx1dW50MRMwEQYDVQQLEwpBbGZhYmF0dGxlMRIwEAYDVQQDEwlsb2NhbGhvc3Qw
+HhcNMjAwNjIyMTYwMTM4WhcNMjEwNjIyMTYwMTM4WjBaMQswCQYDVQQGEwJSVTEP
+MA0GA1UECBMGU2FtYXJhMREwDwYDVQQKEwhJbmZsdXVudDETMBEGA1UECxMKQWxm
+YWJhdHRsZTESMBAGA1UEAxMJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEA6yE1ejo0cMlishUWTfqJfxFncgJZUD+VnX1+8dbNocR0M9Nw
+315zXiwnGc3TBWKzI0O09pxVVUHM+UWzKoGHP8VYKVsr2clmGZRCzJ7F5U7IwjS9
+cP+wPcrHCYMZzNjdI1p5lplIhg5DNG2Q7XRydtMe8qttVpWQKieViMi4KdCc9gW7
+kJFnIo77SW33Uwsj6hXx6su4JHKmvejYDSu3CSER4P6wVeLjDQ7VBEdPSe7H020o
+gchRLmoFzYJMGKZWcoBOY6DTa1aKA/A4kh8Q3vnBdogXC1rkWqcaQXDKDtzBhbAL
+LK7gd/3ehkWvyJppfJ6iQrw72P6eWrEgrzwfHwIDAQABo4H6MIH3MAwGA1UdEwQF
+MAMBAf8wHQYDVR0OBBYEFG0+8QTPNTi1z30+jHguy5Y7z5bWMIGrBgNVHSMEgaMw
+gaCAFFrxiAhXjmght4yRx99fg1o4h6RroXKkcDBuMQswCQYDVQQGEwJSVTEPMA0G
+A1UECBMGU2FtYXJhMRIwEAYDVQQHEwlUb2dsaWF0dHkxETAPBgNVBAoTCEluZmx1
+dW50MRMwEQYDVQQLEwpBbGZhYmF0dGxlMRIwEAYDVQQDEwlsb2NhbGhvc3SCFGYZ
+QIUo9QOunpGAot58v2a/mdTGMBoGA1UdEQQTMBGCCWxvY2FsaG9zdIcEfwAAATAN
+BgkqhkiG9w0BAQ0FAAOCAQEAWVnL82TfEeIr8QYDE9wxVuinhdkzwxLIRKsGrDDq
+m3dKMdaVEcTwiSR1H5bcveEQX/Yu1dFW6Gq3Zst/eEeRf8fGQD4GmrIfbYxup3Xe
+heFSC7dhZ9fVKWBQWPQHfJF6+XwTZQojSiNBtL8SNGGs/AtLscUtOEJGUgLDt2pn
++1poh4xAZlzDWTNKlXCzzT8GHmamhfvc0uGfT/E37/sptUGiEIdchr9qIIu9DLnF
+9DyFSz8zuovOlp5YBTYPm/SltdHGwQAyfDRaoQ14lCITEFZ28W/lJ0V9lU2ZDU76
+2+XB/+XNxERj5Qpk0NbxDoh9tNxFVtHWMaDmfrU6kEPWVQ==
+-----END CERTIFICATE-----

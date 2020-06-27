@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.3.1.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'org.hidetake.swagger.generator' version '2.18.2'
 }
 
 group = 'com.alfa'
@@ -12,7 +13,27 @@ repositories {
 	mavenCentral()
 }
 
+swaggerSources {
+	atmFinder {
+		inputFile = file('src/main/resources/api.json')
+		code {
+			language = 'spring'
+		}
+	}
+}
+
 dependencies {
+	swaggerCodegen 'io.swagger:swagger-codegen-cli:2.4.2'             // Swagger Codegen V2
+	swaggerCodegen 'io.swagger.codegen.v3:swagger-codegen-cli:3.0.5'  // or Swagger Codegen V3
+	swaggerCodegen 'org.openapitools:openapi-generator-cli:3.3.4'     // or OpenAPI Generator
+
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.11.1'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.1'
+	compile group: 'com.github.joschi.jackson', name: 'jackson-datatype-threetenbp', version: '2.6.4'
+	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.1'
+	compile(group: 'org.apache.httpcomponents', name: 'httpclient')
+	compile 'org.threeten:threetenbp:1.4.4'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
