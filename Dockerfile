@@ -1,6 +1,5 @@
 FROM openjdk:11
-MAINTAINER Denis Khrapov
-VOLUME /tmp
 EXPOSE 8080
-ADD battle-0.0.1-SNAPSHOT.jar battle-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/battle-0.0.1-SNAPSHOT.jar"]
+ADD battle-0.0.1-SNAPSHOT.jar /opt/
+ENTRYPOINT ["/usr/local/openjdk-11/bin/java"]
+CMD ["-jar", "/opt/battle-0.0.1-SNAPSHOT.jar"]

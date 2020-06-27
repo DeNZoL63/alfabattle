@@ -3,6 +3,6 @@ services:
   app:
     container_name: app
     image: app-springboot-postgresql
-    build: ./
+    build: .
     ports:
       - "8080:8080"
